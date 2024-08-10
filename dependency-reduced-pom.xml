@@ -1,18 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.josval.task_tracker_cli</groupId>
   <artifactId>task-tracker-cli</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
   <name>task-tracker-cli</name>
+  <version>1.0-SNAPSHOT</version>
   <url>http://maven.apache.org</url>
   <build>
     <finalName>task-cli</finalName>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.2.4</version>
         <executions>
@@ -23,8 +20,7 @@
             </goals>
             <configuration>
               <transformers>
-                <transformer
-                  implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                <transformer>
                   <mainClass>com.josval.task_tracker_cli.App</mainClass>
                 </transformer>
               </transformers>
@@ -34,7 +30,6 @@
       </plugin>
     </plugins>
   </build>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -42,16 +37,5 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>info.picocli</groupId>
-      <artifactId>picocli</artifactId>
-      <version>4.7.6</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.11.0</version>
-    </dependency>
   </dependencies>
-
 </project>
