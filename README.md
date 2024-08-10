@@ -1,3 +1,3 @@
 # Task Tracker CLI
 
-![preview](/assets/preview.png)
+![preview](/assets/preview-image.png)
