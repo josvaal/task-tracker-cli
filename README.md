@@ -6,4 +6,6 @@
 - In the folder where the executable is placed, create a folder named `json`.
 - Inside the json folder, create a file named `data.json`.
 
+## Preview
+
 ![preview](/assets/preview-image.png)
